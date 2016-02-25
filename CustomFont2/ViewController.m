@@ -17,17 +17,29 @@
 
 @implementation ViewController
 
+- (NSArray *)data {
+    return @[@"30 Days Swift", @"这些字体特别适合打「奋斗」和「理想」", @"谢谢「造字工房」，本案例不涉及商业使用", @"使用到造字工房劲黑体，致黑体，童心体", @"呵呵，再见🤗 See you next Project", @"微博"];
+}
+
+- (NSArray *)fontNames {
+    return @[@"MFTongXin_Noncommercial-Regular", @"MFJinHei_Noncommercial-Regular", @"MFZhiHei_Noncommercial-Regular"];
+}
+
+- (IBAction)changeFont {
+    NSLog(@"%s", __func__);
+}
+
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
     return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section { // datasource必需
-    return 10;
+    return [[self data] count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{ // datasource必须
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"FontCell" forIndexPath:indexPath];
-    cell.textLabel.text = @"shabi";
+    cell.textLabel.text = [self data][indexPath.row];
     return cell;
 }
 
