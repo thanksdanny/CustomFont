@@ -53,6 +53,8 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{ // datasource必须
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"FontCell" forIndexPath:indexPath];
     cell.textLabel.text = [self data][indexPath.row];
+    cell.textLabel.font = [UIFont fontWithName:[self fontNames][fontRowIndex] size:16];
+    
     return cell;
 }
 
@@ -61,6 +63,12 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.fontTableView.dataSource = self;
+    
+//    for (NSString *family in [UIFont familyNames]) {
+//        for (NSString *font in [UIFont fontNamesForFamilyName:family]) {
+//            NSLog(@"%@", font);
+//        }
+//    }
     
 }
 
