@@ -15,6 +15,10 @@
 		FD0970FF1C7F5C7A00FDB89A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD0970FD1C7F5C7A00FDB89A /* LaunchScreen.storyboard */; };
 		FD09710A1C7F5C7A00FDB89A /* CustomFont2Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = FD0971091C7F5C7A00FDB89A /* CustomFont2Tests.m */; };
 		FD0971151C7F5C7A00FDB89A /* CustomFont2UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = FD0971141C7F5C7A00FDB89A /* CustomFont2UITests.m */; };
+		FD0971271C7F6F9E00FDB89A /* Gaspar Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = FD0971221C7F6EC000FDB89A /* Gaspar Regular.otf */; };
+		FD0971281C7F6F9E00FDB89A /* MFJinHei_Noncommercial-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FD0971231C7F6EC000FDB89A /* MFJinHei_Noncommercial-Regular.ttf */; };
+		FD0971291C7F6F9E00FDB89A /* MFTongXin_Noncommercial-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FD0971241C7F6EC000FDB89A /* MFTongXin_Noncommercial-Regular.ttf */; };
+		FD09712A1C7F6F9E00FDB89A /* MFZhiHei_Noncommercial-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FD0971251C7F6EC000FDB89A /* MFZhiHei_Noncommercial-Regular.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +55,10 @@
 		FD0971101C7F5C7A00FDB89A /* CustomFont2UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CustomFont2UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD0971141C7F5C7A00FDB89A /* CustomFont2UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomFont2UITests.m; sourceTree = "<group>"; };
 		FD0971161C7F5C7A00FDB89A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FD0971221C7F6EC000FDB89A /* Gaspar Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gaspar Regular.otf"; sourceTree = "<group>"; };
+		FD0971231C7F6EC000FDB89A /* MFJinHei_Noncommercial-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MFJinHei_Noncommercial-Regular.ttf"; sourceTree = "<group>"; };
+		FD0971241C7F6EC000FDB89A /* MFTongXin_Noncommercial-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MFTongXin_Noncommercial-Regular.ttf"; sourceTree = "<group>"; };
+		FD0971251C7F6EC000FDB89A /* MFZhiHei_Noncommercial-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MFZhiHei_Noncommercial-Regular.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +117,7 @@
 				FD0970FB1C7F5C7A00FDB89A /* Assets.xcassets */,
 				FD0970FD1C7F5C7A00FDB89A /* LaunchScreen.storyboard */,
 				FD0971001C7F5C7A00FDB89A /* Info.plist */,
+				FD0971261C7F6ECC00FDB89A /* Font */,
 				FD0970EF1C7F5C7A00FDB89A /* Supporting Files */,
 			);
 			path = CustomFont2;
@@ -138,6 +147,17 @@
 				FD0971161C7F5C7A00FDB89A /* Info.plist */,
 			);
 			path = CustomFont2UITests;
+			sourceTree = "<group>";
+		};
+		FD0971261C7F6ECC00FDB89A /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				FD0971221C7F6EC000FDB89A /* Gaspar Regular.otf */,
+				FD0971231C7F6EC000FDB89A /* MFJinHei_Noncommercial-Regular.ttf */,
+				FD0971241C7F6EC000FDB89A /* MFTongXin_Noncommercial-Regular.ttf */,
+				FD0971251C7F6EC000FDB89A /* MFZhiHei_Noncommercial-Regular.ttf */,
+			);
+			name = Font;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -243,6 +263,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FD0971271C7F6F9E00FDB89A /* Gaspar Regular.otf in Resources */,
+				FD0971281C7F6F9E00FDB89A /* MFJinHei_Noncommercial-Regular.ttf in Resources */,
+				FD0971291C7F6F9E00FDB89A /* MFTongXin_Noncommercial-Regular.ttf in Resources */,
+				FD09712A1C7F6F9E00FDB89A /* MFZhiHei_Noncommercial-Regular.ttf in Resources */,
 				FD0970FF1C7F5C7A00FDB89A /* LaunchScreen.storyboard in Resources */,
 				FD0970FC1C7F5C7A00FDB89A /* Assets.xcassets in Resources */,
 				FD0970FA1C7F5C7A00FDB89A /* Main.storyboard in Resources */,

@@ -44,6 +44,7 @@
                     <navigationItem key="navigationItem" title="Custom Font" id="yfw-lQ-KEz"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
+                        <outlet property="changeFontBtn" destination="RvP-Uy-eCA" id="FUq-z9-VuE"/>
                         <outlet property="fontTableView" destination="de6-nM-NCf" id="R2Y-G1-Cqw"/>
                     </connections>
                 </viewController>

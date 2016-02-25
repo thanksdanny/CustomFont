@@ -10,12 +10,26 @@
 
 @interface ViewController () <UITableViewDataSource>
 
+{
+    int fontRowIndex;
+}
+
 @property (weak, nonatomic) IBOutlet UITableView *fontTableView;
 @property (weak, nonatomic) IBOutlet UIButton *changeFontBtn;
-
 @end
 
 @implementation ViewController
+
+#pragma mark - 按钮
+
+- (IBAction)changeFont {
+    NSLog(@"%s", __func__);
+    fontRowIndex = (fontRowIndex + 1) % 3;
+    [self.fontTableView reloadData];
+}
+
+
+# pragma mark - tools
 
 - (NSArray *)data {
     return @[@"30 Days Swift", @"这些字体特别适合打「奋斗」和「理想」", @"谢谢「造字工房」，本案例不涉及商业使用", @"使用到造字工房劲黑体，致黑体，童心体", @"呵呵，再见🤗 See you next Project", @"微博"];
@@ -25,9 +39,8 @@
     return @[@"MFTongXin_Noncommercial-Regular", @"MFJinHei_Noncommercial-Regular", @"MFZhiHei_Noncommercial-Regular"];
 }
 
-- (IBAction)changeFont {
-    NSLog(@"%s", __func__);
-}
+
+#pragma mark - TableView
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
     return 1;
@@ -42,6 +55,8 @@
     cell.textLabel.text = [self data][indexPath.row];
     return cell;
 }
+
+# pragma mark - viewDidLoad
 
 - (void)viewDidLoad {
     [super viewDidLoad];
